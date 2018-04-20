@@ -122,15 +122,15 @@ public class main {
 	public static void main (String[] args)throws Exception{
 		
 
-		String 	StudentName 		=	"정은택";				//이름	-	정은택
-		String 	StudentSubject 		=	"영어";				//과목	-	영어
-		String 	StudentGrade 		=	"일반";				//학년	-	일반
-		String 	StudentSemester 	=	"토익";				//학기	-	토익
-		String 	StudentTest 		=	"1차";				//평가	-	1차
-		String 	TestDate 			=	"17년 12월 11일 월요일";	//date	-	
-		String 	Test_level			=	"R";				//Level	-	A,B,C,D,R	
-		int 	Test_count			=	1;					//시험지 갯수
-		int		Test_question_count =	20;					//시험지 문제 수
+		String 	StudentName 		=	"정은택";				//name
+		String 	StudentSubject 		=	"영어";				//subject
+		String 	StudentGrade 		=	"일반";				//section-a
+		String 	StudentSemester 	=	"토익";				//section-b
+		String 	StudentTest 		=	"1차";				//section-c
+		String 	TestDate 			=	"18년 4월 21일 토요일";	//date
+		String 	Test_level			=	"A";				//Level : A,B,C,D,R	
+		int 	Test_count			=	1;					
+		int		Test_question_count =	20;					
 		
 		MakeTest mt = new MakeTest(StudentName,StudentSubject,StudentGrade,StudentSemester,StudentTest,TestDate);
 		mt.Test(Test_level,Test_count,Test_question_count);		

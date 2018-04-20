@@ -16,8 +16,8 @@ public class Size {
 	public static int 						TXT_M_S 						= 30 ;  // [선언] 글씨 사이즈 - m_s
 	
 	public static int 						TXT_S_B 						= 20 ;  // [선언] 글씨 사이즈 - m_b
-	public static int 						TXT_S_M 						= 13 ;  // [선언] 글씨 사이즈 - m_m
-	public static int 						TXT_S_S 						= 8 ;  	// [선언] 글씨 사이즈 - m_s
+	public static int 						TXT_S_M 						= 14 ;  // [선언] 글씨 사이즈 - m_m
+	public static int 						TXT_S_S 						= 11 ;  	// [선언] 글씨 사이즈 - m_s
 
 	/*용지*/
 	public static int 						WIDTH 							= 2100; // [선언] A4용지 사이즈 - 가로

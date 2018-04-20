@@ -380,7 +380,7 @@ public class MakeTest {
 
 		if(_incorrectCount != 0){
 			drawImg(_g,Path.INFO_COUNT_BACKGROUND(), _x, _y-30, 10*13, 3*13);
-			drawString(_g,Size.TXT_M_S,ColorList.WHITE,"틀림",_x+5,_y);
+			drawString(_g,Size.TXT_M_S,ColorList.WHITE,"Wrong",_x+5,_y);
 			
 			if(_incorrectCount < 10){
 				drawString(_g,Size.TXT_M_S,ColorList.GRAY_DARK,Integer.toString(_incorrectCount)+"번",_x+75,_y);
@@ -394,10 +394,10 @@ public class MakeTest {
 		if(_recentStudyPassDate !=  -1l){
 			String out ="";
 			drawImg(_g,Path.INFO_COUNT_BACKGROUND(), _x, _y-30, 10*13, 3*13);
-			drawString(_g,Size.TXT_M_S,ColorList.WHITE,"경과",_x+5,_y);
+			drawString(_g,Size.TXT_M_S,ColorList.WHITE,"After",_x+5,_y);
 			if(_recentStudyPassDate != 0){
 				if(_recentStudyPassDate < 7){
-					out = Integer.toString((int) (_recentStudyPassDate) ) + "일";
+					out = Integer.toString((int) (_recentStudyPassDate) ) + "D";
 				}else if(_recentStudyPassDate < 7*2){
 					out = "1주";
 				}else if(_recentStudyPassDate < 7*3){

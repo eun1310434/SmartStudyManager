@@ -520,8 +520,8 @@ public class DrawString {
 					Font.BOLD, 
 					Size.TXT_S_B, 
 					ColorList.WHITE, 
-					"틀림", 
-					_x+5, _y);
+					"X", 
+					_x+20, _y);
 			
 			if(_incorrectCount < 10){
 				drawString(
@@ -530,7 +530,7 @@ public class DrawString {
 						Font.PLAIN, 
 						Size.TXT_S_B,
 						ColorList.GRAY_DARK,
-						Integer.toString(_incorrectCount)+"번",
+						Integer.toString(_incorrectCount),
 						_x+60,	_y);
 			}else{
 				drawString(
@@ -555,28 +555,28 @@ public class DrawString {
 					Font.BOLD, 
 					Size.TXT_S_B,
 					ColorList.WHITE,
-					"경과",
+					"Pass",
 					_x+5,_y);
 			
 			if(_recentStudyPassDate != 0){
 				if(_recentStudyPassDate < 7){
-					out = Integer.toString((int) (_recentStudyPassDate) ) + "일";
+					out = "D-"+Integer.toString((int) (_recentStudyPassDate) );
 				}else if(_recentStudyPassDate < 7*2){
-					out = "1주";
+					out = "W-1";
 				}else if(_recentStudyPassDate < 7*3){
-					out = "2주";
+					out = "W-2";
 				}else if(_recentStudyPassDate < 7*4){
-					out = "3주";
+					out = "W-3";
 				}else if(_recentStudyPassDate < 7*5){
-					out = "4주";
+					out = "W-4";
 				}else if(_recentStudyPassDate < 7*6*2){
-					out = "1달";
+					out = "Month";
 				}else {
-					out = "초과";
+					out = "OVER";
 				}
 				
 			}else{
-				out = "오늘";
+				out = "Today";
 			}
 			drawString(
 					_g, 
